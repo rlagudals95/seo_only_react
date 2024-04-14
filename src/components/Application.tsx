@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Application.scss';
 import { icons } from './Icons';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+
 
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
@@ -49,6 +51,7 @@ const Application: React.FC = () => {
       <div className='header'>
         <div className='main-heading'>
           <h1 className='themed'>React Webpack Typescript</h1>
+          <Link to='/about'>go about!</Link>
         </div>
         <div className='main-teaser'>
           <div>
