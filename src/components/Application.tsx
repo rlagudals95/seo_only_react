@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Application.scss';
 import { icons } from './Icons';
+import { Helmet } from 'react-helmet-async';
 
 const Application: React.FC = () => {
   const [counter, setCounter] = useState(0);
@@ -42,6 +43,9 @@ const Application: React.FC = () => {
 
   return (
     <div id='erwt'>
+      <Helmet>
+        <title>app main title</title>
+      </Helmet>
       <div className='header'>
         <div className='main-heading'>
           <h1 className='themed'>React Webpack Typescript</h1>
